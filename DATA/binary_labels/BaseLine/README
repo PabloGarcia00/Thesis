@@ -1,0 +1,3 @@
+This directory contains the label data downsampled to have the same training
+size. Both PN_1_1, TF_split and TF_TG_split contain the same number of
+examples.
