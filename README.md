@@ -1,5 +1,24 @@
 # Thesis
-Msc thesis work
+Title: Gene representations for gene regulatory network inference
+
+Gene Regulatory Networks (GRN) describe the relationships between Transcription Factors (TFs) and
+target genes. Complete GRNs are important for understanding the molecular and functional processes. As
+experimental GRN inference remains laborious, various computational methods have been developed for GRN
+inference. Supervised link-prediction models learned from a prior GRN to predict missing links, the prior GRN
+is often attributed with a secondary data sources that describe the genes in the network. Link-prediction
+models learn node representations based on their topology in the network and the secondary data source. As
+topology constitutes structural features such as node connectivity and centrality, it is not clear from what
+component the performance is derived, topology or the secondary data source. This project investigates
+expression, coexpression and functional gene representations for GRN inference demonstrated in Arabidopsis
+thaliana. It was found that the gene representations improved GRN inference, however, a great reliance
+on topological information was observed. By testing model performance on unseen genes using various
+datasplits that constituted transductive, semi-transductive and inductive test settings, it was found that the
+gene representations varied in their utility for GRN inference. Furthermore, results show that testing on genes
+seen during training (transductive) positively impacts performance compared to unseen genes (inductive),
+due to exploitation of the topological information. Thus the inductive test setting provides a more difficult
+prediction problem, and a better evaluation method for gene representations. Furthermore, key areas of
+improvement are proposed to enhance the learning of robust gene representations for inductive prediction.
+Key words: Gene Regulatory Network, Arabidopsis thaliana, deep learning, inductive, transductive, link-prediction
 
 # Code
 Contains scripts and notebooks that were used for generating and analysing the data.
